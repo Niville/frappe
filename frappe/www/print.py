@@ -2,7 +2,6 @@
 # MIT License. See license.txt
 
 from __future__ import unicode_literals
-
 import frappe, os, copy, json, re
 from frappe import _
 
@@ -10,6 +9,7 @@ from frappe.modules import get_doc_path
 from jinja2 import TemplateNotFound
 from frappe.utils import cint, strip_html
 from frappe.utils.pdf import get_pdf
+
 
 no_cache = 1
 no_sitemap = 1
@@ -386,6 +386,8 @@ def column_has_value(data, fieldname):
 				break
 
 	return has_value
+
+
 
 trigger_print_script = """
 <script>
